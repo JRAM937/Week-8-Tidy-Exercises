@@ -350,22 +350,22 @@ who %>%
   select(-iso2, -iso3) %>%
   separate(codes, c("new", "type", "sexage"), sep = "_") %>%
   select(-new) %>% 
-  separate(sexage, c("sex", "age"), sep = 4:7)
+  separate(sexage, c("sex", "age"), sep = 1)
 ```
 
     ## # A tibble: 405,440 × 6
     ##    country      year type  sex   age       n
     ##    <chr>       <int> <chr> <chr> <chr> <int>
-    ##  1 Afghanistan  1980 sp    m014  ""       NA
-    ##  2 Afghanistan  1980 sp    m152  "4"      NA
-    ##  3 Afghanistan  1980 sp    m253  "4"      NA
-    ##  4 Afghanistan  1980 sp    m354  "4"      NA
-    ##  5 Afghanistan  1980 sp    m455  "4"      NA
-    ##  6 Afghanistan  1980 sp    m556  "4"      NA
-    ##  7 Afghanistan  1980 sp    m65   ""       NA
-    ##  8 Afghanistan  1980 sp    f014  ""       NA
-    ##  9 Afghanistan  1980 sp    f152  "4"      NA
-    ## 10 Afghanistan  1980 sp    f253  "4"      NA
+    ##  1 Afghanistan  1980 sp    m     014      NA
+    ##  2 Afghanistan  1980 sp    m     1524     NA
+    ##  3 Afghanistan  1980 sp    m     2534     NA
+    ##  4 Afghanistan  1980 sp    m     3544     NA
+    ##  5 Afghanistan  1980 sp    m     4554     NA
+    ##  6 Afghanistan  1980 sp    m     5564     NA
+    ##  7 Afghanistan  1980 sp    m     65       NA
+    ##  8 Afghanistan  1980 sp    f     014      NA
+    ##  9 Afghanistan  1980 sp    f     1524     NA
+    ## 10 Afghanistan  1980 sp    f     2534     NA
     ## # … with 405,430 more rows
 
 ------------------------------------------------------------------------

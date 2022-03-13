@@ -138,7 +138,7 @@ who %>%
   select(-iso2, -iso3) %>%
   separate(codes, c("new", "type", "sexage"), sep = "_") %>%
   select(-new) %>% 
-  separate(sexage, c("sex", "age"), sep = 4:7)
+  separate(sexage, c("sex", "age"), sep = 1)
 ```
 
 
